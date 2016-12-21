@@ -18,7 +18,7 @@ namespace EFAquarium.Models
 
         public override string ToString()
         {
-            if (type.First() == 'A')
+            if (type.ToLower().First() == 'a')
             {
                 return $"An {type} named {name}";
             }
