@@ -64,9 +64,30 @@
     <Compile Include="Migrations\201612202013045_Init2.Designer.cs">
       <DependentUpon>201612202013045_Init2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612202108274_AddedAqCreatureTable.cs" />
+    <Compile Include="Migrations\201612202108274_AddedAqCreatureTable.Designer.cs">
+      <DependentUpon>201612202108274_AddedAqCreatureTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612202111140_AddedAqCreatureTablee.cs" />
+    <Compile Include="Migrations\201612202111140_AddedAqCreatureTablee.Designer.cs">
+      <DependentUpon>201612202111140_AddedAqCreatureTablee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612202115334_AddedAQCreatureVirtuality.cs" />
+    <Compile Include="Migrations\201612202115334_AddedAQCreatureVirtuality.Designer.cs">
+      <DependentUpon>201612202115334_AddedAQCreatureVirtuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612202138044_AddedAQCreatureVirtuality1.cs" />
+    <Compile Include="Migrations\201612202138044_AddedAQCreatureVirtuality1.Designer.cs">
+      <DependentUpon>201612202138044_AddedAQCreatureVirtuality1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612202201260_Restructured.cs" />
+    <Compile Include="Migrations\201612202201260_Restructured.Designer.cs">
+      <DependentUpon>201612202201260_Restructured.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Aquarium.cs" />
     <Compile Include="Models\AquariumContext.cs" />
+    <Compile Include="Models\AquariumCreatures.cs" />
     <Compile Include="Models\Creature.cs" />
     <Compile Include="Models\Ocean.cs" />
     <Compile Include="Program.cs" />
@@ -85,6 +106,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612202013045_Init2.resx">
       <DependentUpon>201612202013045_Init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612202108274_AddedAqCreatureTable.resx">
+      <DependentUpon>201612202108274_AddedAqCreatureTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612202111140_AddedAqCreatureTablee.resx">
+      <DependentUpon>201612202111140_AddedAqCreatureTablee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612202115334_AddedAQCreatureVirtuality.resx">
+      <DependentUpon>201612202115334_AddedAQCreatureVirtuality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612202138044_AddedAQCreatureVirtuality1.resx">
+      <DependentUpon>201612202138044_AddedAQCreatureVirtuality1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612202201260_Restructured.resx">
+      <DependentUpon>201612202201260_Restructured.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

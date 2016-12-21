@@ -12,3 +12,8 @@ c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAqua
 c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.csproj.GenerateResource.Cache
 c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.Why.resources
 c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.Init2.resources
+c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.AddedAqCreatureTable.resources
+c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.AddedAqCreatureTablee.resources
+c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.AddedAQCreatureVirtuality.resources
+c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.AddedAQCreatureVirtuality1.resources
+c:\users\angel murchison\documents\visual studio 2015\Projects\EFAquarium\EFAquarium\obj\Debug\EFAquarium.Migrations.Restructured.resources

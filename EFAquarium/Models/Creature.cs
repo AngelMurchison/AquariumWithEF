@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace EFAquarium.Models
 {
@@ -14,9 +15,17 @@ namespace EFAquarium.Models
         public double? weight { get; set; }
         public string color { get; set; }
         public string name { get; set; }
-        public int? oceanId { get; set; }
-        public virtual Ocean ocean { get; set; }
-        public int? aquariumId { get; set; }
-        public virtual Aquarium aquarium { get; set; }
+
+        public override string ToString()
+        {
+            if (type.First() == 'A')
+            {
+                return $"An {type} named {name}";
+            }
+            else
+            {
+                return $"A {type} named {name}";
+            }
+        }
     }
 }

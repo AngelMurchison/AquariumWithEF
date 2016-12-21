@@ -18,5 +18,6 @@ namespace EFAquarium.Models
         public DbSet<Creature> Creatures { get; set; }
         public DbSet<Aquarium> Aquariums { get; set; }
         public DbSet<Ocean> Oceans { get; set; }
+        public DbSet<AquariumCreatures> AquariumCreatures { get; set; }
     }
 }
