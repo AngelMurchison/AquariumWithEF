@@ -10,15 +10,7 @@ using EFAquarium.Models;
 namespace EFAquarium
 {
     class Program
-    {
-        public static void printCollection(IEnumerable<AquariumCreatures> list)
-        {
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
-        }
-
+    { 
         public static void readAqCreature()
         {
             var db = new AquariumContext();
@@ -43,7 +35,6 @@ namespace EFAquarium
             Console.ReadLine();
             db = null;
         }
-
         public static void updateAqCreature(int AqCreatureID = 1, int aquariumID = 1, int creatureID = 1, int oceanID = 1) // how to make default values unchanged, idt actually updates
         {
             var db = new AquariumContext();
@@ -54,7 +45,6 @@ namespace EFAquarium
             db.SaveChanges();
             db = null;
         }
-
         public static void createAqCreature(int creatureID = 1, int aquariumID = 1, int oceanID = 1)
         {
             var db = new AquariumContext();
@@ -63,7 +53,6 @@ namespace EFAquarium
             db.SaveChanges();
             db = null;
         }
-
         public static void deleteAqCreature(int AqCreatureID)
         {
             var db = new AquariumContext();
@@ -89,7 +78,6 @@ namespace EFAquarium
             Console.ReadLine();
             db = null;
         }
-
         public static void creaturesAndTheirAquariumsFromOcean(string oceanname)
         {
             var db = new AquariumContext();
@@ -109,7 +97,6 @@ namespace EFAquarium
             Console.ReadLine();
             db = null;
         }
-
         public static void distinctCitiesWithAquariums()
         {
             var db = new AquariumContext();
@@ -128,8 +115,7 @@ namespace EFAquarium
             Console.ReadLine();
             db = null;
         }
-
-        public static void aquaticLifeInEachOcean()
+        public static void creaturesInEachOcean()
 
         {
             var db = new AquariumContext();
@@ -170,6 +156,8 @@ namespace EFAquarium
 
         static void Main(string[] args)
         {
+            /* ! CREATE, UPDATE, DELETE SAVE TO DATABASE ! */
+
             /* Create */
             //createAqCreature(3, 1, 3);
 
@@ -180,22 +168,24 @@ namespace EFAquarium
             //deleteAqCreature(8);
 
             /* Read */
+            Console.WriteLine("All creatures in all aquariums.");
+            Console.WriteLine("LOADING");
             readAqCreature();
 
-            // An SQL Query that given an Aquarium Name, What AquaticLife is there
-            Console.Write("All Aquatic Life at the Tampa Aquarium \n");
+            // A SQL Query that given an aquarium Name, what creatures live there
+            Console.WriteLine("All Aquatic Life at the Tampa Aquarium");
             creaturesFromAquariumName("The Tampa Aquarium");
 
-            // An SQL Query that, given an Ocean, What Aquariums have fish from that ocean
-            Console.Write("All fish in the Arctic \n");
+            // A SQL Query that, given an ocean, what aquariums have creatures from that ocean
+            Console.WriteLine("All aquatic life in the Arctic");
             creaturesAndTheirAquariumsFromOcean("Arctic");
 
-            // An SQL Query that Returns Only the Distinct (new topic) Cities that have aquariums
-           // Console.Write("new query \n");
-             distinctCitiesWithAquariums();
+            // A SQL Query that returns only the distinct cities that have aquariums
+            Console.WriteLine("Cities that have aquariums");
+            distinctCitiesWithAquariums();
 
-            // An SQL Query that Gives the Count(new topic) of How many species of AquaticLife live in each Ocean
-            aquaticLifeInEachOcean();
+            // A SQL Query that gives the count of How many creatures are from each Ocean
+            creaturesInEachOcean();
         }
     }
 }
